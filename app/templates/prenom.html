@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Saisie prénom</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+<body>
+    <div>
+        <form method="POST" action="saisieprenom">
+            <input type="text" name="prenom" placeholder="Insérer votre prénom">
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>

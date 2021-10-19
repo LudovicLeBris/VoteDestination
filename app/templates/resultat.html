@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat du vote</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body class="resultat">
+    <div><h1>Résultats</h1></div>
+    <div class="gagnant">
+        Gagnant = {{ gagnant }}
+    </div>
+    <div>
+        <ul>
+            <li>Japon = {{ japon }} voix</li>
+            <li>Polynésie Française = {{ polynesie }} voix</li>
+            <li>Cuba = {{ cuba }} voix</li>
+            <li>Pérou = {{ perou }} voix</li>
+            <li>USA = {{ USA }} voix</li>
+            <li>Pérou = {{ perou }} voix</li>
+        </ul>
+    </div>
+    <div class="Accueil">
+        <a href="{{ url_for("homepage") }}">Retour à l'accueil</a>
+    </div>
+
+</body>
+</html>

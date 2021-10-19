@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Votez pour notre prochaine destination</h1>
+    <div class="Boutons">
+        <form method="POST" action="choixpays">
+            <div class="r1">
+                <button name="pays" type="submit" value="Japon" style="background-image:url(/static/japon.png)">Japon</button>
+                <button name="pays" type="submit" value="Polynésie Française" style="background-image:url(/static/Polynésie.png)">Polynésie Française</button>
+                <button name="pays" type="submit" value="Cuba" style="background-image:url(/static/Cuba.png)">Cuba</button>
+            </div>
+            <div class="r2">
+                <button name="pays" type="submit" value="Pérou" style="background-image:url(/static/Pérou.png)">Pérou</button>
+                <button name="pays" type="submit" value="USA" style="background-image:url(/static/USA.png)">USA</button>
+                <button name="pays" type="submit" value="Argentine" style="background-image:url(/static/Argentine.png">Argentine</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="lien_resultat">
+        <a href="{{ url_for("resultat") }}">les résultats</a>
+    </div>
+
+</body>
+</html>
