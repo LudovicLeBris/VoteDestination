@@ -1,51 +1,115 @@
 body {
     background-color:rgb(252, 247, 241);
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    display: block;
 }
 
-.Boutons {
+#Titre
+{
     text-align: center;
-}
-
-button {
-    margin: 25px;
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    /* border: 2px; */
-    padding-top: 315px;
-    color:midnightblue;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgb(255, 244, 226);
-    opacity: 0.6;
-    transition-duration: 0.4s;
-}
-
-button:hover {
-    opacity: 1;
+    font-size: 2em;
+    padding: 1%;
+    margin: 2%;
+    font-weight: bold;
+    background-color: wheat;
+    color:chocolate ;
 }
 
 h1 {
-    text-align: center;
-    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    }
+
+#Boutons
+{
+    margin: 5% auto;
 }
 
-form {
-    text-align: center;
+form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
 }
 
-.r1 {
+#ligne_1
+{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
-.r2 {
+#ligne_2
+{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
-.lien_resultat a {
-    text-align: right;
-    text-decoration: transparent;
+button
+{
+    margin: 2% 2% 2% 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.6;
+    border: 0px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+button:hover
+{
+    opacity: 1;
+}
+
+button > span
+{
+    position:relative;
+    font-size: 1.1em;
+    bottom: -54%;
+    color: chocolate;
+    font-weight: bold;
+}
+
+button[value="Japon"]
+{
+    background-image:url(/static/Japon.png);
+
+}
+button[value="Polynésie Française"]
+{
+    background-image:url(/static/Polynésie.png);
+
+}
+button[value="Cuba"]
+{
+    background-image:url(/static/Cuba.png);
+
+}
+button[value="Pérou"]
+{
+    background-image:url(/static/Pérou.png);
+
+}
+button[value="USA"]
+{
+    background-image:url(/static/USA.png);
+
+}
+button[value="Argentine"]
+{
+    background-image:url(/static/Argentine.png);
+
+}
+
+#lien_resultat a {
+    text-align: left;
+    text-decoration: none;
     color: rgb(252, 247, 241);
 }
 
@@ -65,4 +129,13 @@ li {
 
 .Accueil {
     margin-top: 50px;
+}
+
+@media screen and (min-width: 1024px)
+{
+    button
+    {
+        width: 300px;
+        height: 300px;
+    }    
 }

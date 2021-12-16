@@ -6,25 +6,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
-    <h1>Votez pour notre prochaine destination</h1>
-    <div class="Boutons">
+    <div id="Titre">
+        Votez pour notre prochaine destination
+    </div>
+    <div id="Boutons">
         <form method="POST" action="choixpays">
-            <div class="r1">
-                <button name="pays" type="submit" value="Japon" style="background-image:url(/static/japon.png)">Japon</button>
-                <button name="pays" type="submit" value="Polynésie Française" style="background-image:url(/static/Polynésie.png)">Polynésie Française</button>
-                <button name="pays" type="submit" value="Cuba" style="background-image:url(/static/Cuba.png)">Cuba</button>
+            <div id="ligne_1">
+                <button name="pays" type="submit" value="Japon" class="ligne_1"><span>Japon</span></button>
+                <button name="pays" type="submit" value="Polynésie Française" class="ligne_1"><span>Polynésie Française</span></button>
+                <button name="pays" type="submit" value="Cuba" class="ligne_1"><span>Cuba</span></button>
             </div>
-            <div class="r2">
-                <button name="pays" type="submit" value="Pérou" style="background-image:url(/static/Pérou.png)">Pérou</button>
-                <button name="pays" type="submit" value="USA" style="background-image:url(/static/USA.png)">USA</button>
-                <button name="pays" type="submit" value="Argentine" style="background-image:url(/static/Argentine.png">Argentine</button>
+            <div id="ligne_2">
+                <button name="pays" type="submit" value="Pérou" class="ligne_2"><span>Pérou</span></button>
+                <button name="pays" type="submit" value="USA" class="ligne_2"><span>USA</span></button>
+                <button name="pays" type="submit" value="Argentine" class="ligne_2"><span>Argentine</span></button>
             </div>
-
         </form>
     </div>
-    <div class="lien_resultat">
+    <div id="lien_resultat">
         <a href="{{ url_for("resultat") }}">les résultats</a>
     </div>
 
 </body>
 </html>
+
